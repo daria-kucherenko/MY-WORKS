@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <title>Figures</title>
+
+    <style>
+      
+        .area {
+            width: 400px;
+            height: 400px;
+            border: 2px solid rebeccapurple;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .figure {
+			width: 10px;
+            height: 10px;
+			border-radius:50%;
+			position: absolute;
+            transform: translate(-50%, -50%);
+        }
+		#figureWidth{
+			display: none;
+		}
+		#figureHeight{
+			display: none;
+		}
+    </style>
+</head>
+
+<body>
+
+    <input type="color" id="figureColor">
+	
+	<input type="radio" name="myRadios" id="square">
+	<span>Square</span>
+	<input type="radio" name="myRadios" id="rectangle">
+	<span>Rectangle</span>
+    <input type="radio" name="myRadios" id="circle">
+	<span>Circle</span>
+    <input type="radio" name="myRadios" id="ellipse">
+	<span>Ellipse</span><br/>
+	
+    <input type="text" id="figureWidth">
+    <input type="text" id="figureHeight">
+
+        <div class="area"></div>
+
+
+    <script src="Figures.js"></script>
+</body>
+
+</html>
