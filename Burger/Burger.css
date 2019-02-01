@@ -1,0 +1,65 @@
+
+body{
+	background:url(img/0.jpg) no-repeat;
+	background-size: 100%;
+}
+#Selection{
+	width:500px;
+	height:180px;
+	font-size:18px;
+	color:#fff;
+	background-color: rgba(0, 128, 0,0.2); 
+	border-radius:30px;
+	border:3px solid #008000;
+	position: relative;
+}
+#Sizes, #Stuffings{
+	margin-left:12px;
+	font-size:15px;
+	margin-top:10px;	
+}
+#Submit{
+	width:150px;
+	height:40px;
+	font-size:20px;
+	color: red;
+	position: absolute;
+	top: 130px;
+	left: 50%;
+	margin-left:-75px;
+}
+#Order{
+	width:500px;
+	height:40px;
+	background-color: rgba(0, 128, 0,0.2); 
+	color:#fff;
+	font-size:25px;
+	margin-top:25px;
+	text-align:center;
+	line-height:40px;
+	border:3px solid #008000;
+	border-radius:20px;
+	display:none;
+}
+#Images{
+	width:600px;
+	height:200px;
+	background-color: rgba(0, 128, 0,0.2); 
+	border:3px solid #008000;
+	border-radius:30px;
+	position: absolute;
+	top: 7px;
+	right:100px;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:nowrap;
+	flex-basis:150;
+	align-items:center;
+}
+.image{
+	width:200px;
+	height:200px;	
+}
+		
+    

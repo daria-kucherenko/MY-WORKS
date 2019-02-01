@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
+    <link rel="stylesheet" href="Burger.css">
+    <title>BURGER-MAKER</title>
+</head>
+
+<body>
+
+<div id="Selection"> <!-- выбор параметров бургера -->
+	<select name="" id="Sizes" multiple>
+		<option disabled selected>Выберите размер гамбургера</option>
+		<option value="1">Большой, 100 грн</option>
+		<option value="2">Маленький, 50 грн</option>
+	</select>
+  
+	<select name="" id="Stuffings" multiple>
+		<option disabled selected>Выберите начинку гамбургера</option>
+		<option value="1">Сыр, 10 грн</option>
+		<option value="2">Салат, 20 грн</option>
+		<option value="3">Картошка, 15 грн</option> 
+	</select>
+
+	<div id="Checkbox">
+		<input type="checkbox" id="Mayonez">
+		<span>Майонез, 20 грн</span><br/>
+		<input type="checkbox" id="Spice">
+		<span>Приправа, 15 грн</span>
+	</div>
+	<p><input type="submit" value="Заказать" id="Submit"></p>
+</div>
+
+<div id="Order"></div> <!-- вывод цены и каллорий бургера -->
+
+<div id="Images"></div> <!-- вставка картинок бургера -->
+
+<script src="Burger.js"></script>
+</body>
+
+</html>
