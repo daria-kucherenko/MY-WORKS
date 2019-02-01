@@ -1,0 +1,107 @@
+body{
+	background:linear-gradient(180deg,rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url(img/picture.jpg) center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+
+}
+.location{
+	position:absolute;
+	top:10px;
+	left:25px;
+}
+.city-name{
+	width:300px;
+	height:35px;
+	position:absolute;
+	top:60px;
+	left:25px;
+}
+.city_btn{
+	height:35px;
+	line-height: 18px;
+	position:absolute;
+	top:60px;
+	left:350px;
+}
+#current_weather{
+	margin:25px;
+	padding: 10px;
+	padding-bottom:5px;
+	border:2px solid #0ff;
+	border-radius: 30px;
+	background: #fff;
+	display:flex;
+	justify-content: flex-start;
+	position:absolute;
+	top: 85px;
+	flex-flow: row wrap;
+	background:linear-gradient(180deg,rgba(255,255,255,0.5),rgba(255,255,255,0.8)),url(img/fon.jpg) center;
+}
+
+.main_info{
+	width: 250px;
+	height: 170px;
+	font-family:  Georgia, serif, Arial;
+	font-size: 18px;
+	text-align: center;
+	line-height: 60px;
+	color: #f00;
+	flex:1 0 30%;
+	overflow: hidden;
+}
+.other_info{
+	width: 170px;
+	height: 170px;
+	padding-left: 10px;
+	font-family: Georgia, serif, Arial;
+	font-size: 17px;
+	text-align: center;
+	line-height: 60px;
+	color: #0dd;
+	flex:1 0 30%;
+	overflow: hidden;
+}
+
+.hide{
+	display: none;
+}
+#log_out{
+	position:absolute;
+	top: 20px;
+	right:30px;
+	font-family:'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #00f;
+	text-decoration:none; 
+}
+#log_out:hover{
+	color: #f00;
+}
+#log_in{
+	position:absolute;
+	top: 20px;
+	right:30px;
+	font-family:'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #00f;
+	text-decoration:none; 
+}
+#log_in:hover{
+	color: #f00;
+	
+}
+#show_email{
+	width:200px;
+	color: #00f;
+	position: absolute;
+	top: 20px;
+	right:100px;
+}
+#auth_conteiner{
+	height: 200px;
+	width:190px;
+	position:absolute;
+	top:65px;
+	right:30px;
+}

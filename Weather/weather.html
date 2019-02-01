@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="weather.css">
+</head>
+<body>
+<!-- Геолокация -->
+<p><button class = "btn btn-outline-secondary location" onclick="geoFindMe()">Show weather for my location</button></p>
+
+<!-- Поиск города -->
+<div id="search_area">
+	<input type="text" placeholder="Enter city name in Latin" class="city-name" list="cities"autofocus>
+    <button class="btn btn-primary city_btn">Search</button>
+	<datalist id="cities">
+    	<option value="Vinnytsia"></option>
+    	<option value="Dnipro"></option>
+    	<option value="Zhytomyr"></option>
+    	<option value="Zaporizhzhia"></option>
+    	<option value="Ivano-Frankivsk"></option>
+    	<option value="Kyiv"></option>
+    	<option value="Lutsk"></option>
+    	<option value="Lviv"></option>
+    	<option value="Mykolaiv"></option>
+    	<option value="Odesa"></option>
+    	<option value="Poltava"></option>
+    	<option value="Rivne"></option>
+    	<option value="Sumy"></option>
+    	<option value="Ternopil"></option>
+    	<option value="Uzhhorod"></option>
+    	<option value="Kharkiv"></option>
+    	<option value="Kherson"></option>
+    	<option value="Khmelnytskyi"></option>
+    	<option value="Cherkasy"></option>
+    	<option value="Chernivtsi"></option>
+    	<option value="Chernihiv"></option>
+	</datalist></p>
+</div>
+<!-- Авторизация -->
+<a href="#" id ="log_in">Log in</a>
+<a href="#" id ="log_out" class = "hide">Log out</a>
+<div id="show_email" class = "hide"></div>
+
+<div id = "auth_conteiner" class = "hide">
+   <input id ="txtEmail" type="email" placeholder="Email"><br/><br/>
+   <input id ="txtPassword" type="password" placeholder="Password"><br/><br/>
+   <button id ="btnLogin" class = "btn btn-primary">Log in</button>
+   <button id ="btnSignUp" class = "btn btn-secondary">Sign Up</button>
+</div>
+
+<!-- Вывод текущей погоды -->
+<div id="current_weather">
+	<div class="picture"></div>
+	<div class="main_info"></div>
+	<div class="other_info"></div>
+</div>
+
+<!-- Вывод прогноза погоды -->
+<div id="weather_forecast"></div>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-auth.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="weather.js"></script>
+
+
+   
+    
+</body>
+</html>
