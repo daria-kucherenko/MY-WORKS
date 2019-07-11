@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Temy Test Environment</title>
+</head>
+<body>
+	<form id="form" method="post">
+
+		<h1 title="Registration form">Registration</h1>
+
+		<div class="group">
+			<label for="">Full name<span>*</span></label>
+			<input type="text" name="name" pattern="^[a-zA-Z]+$" placeholder="Enter your name" required autofocus>
+		</div>
+
+		<div class="group">
+			<label for="">Email<span>*</span></label>
+			<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your valid email" required>
+		</div>
+
+		<div class="group" id="countries_conteiner">
+			<label for="">Country<span>*</span></label>
+			<select name="country_id" id="country"required>
+				<option disabled selected>Non-selected</option>
+			</select> 
+		</div>
+
+		<div class="group hide" id="states_conteiner">
+			<label for="">State<span>*</span></label>
+			<select name="state_id" id="state" required>
+				<option disabled selected>Non-selected</option>
+			</select> 
+		</div>
+
+		<div class="group hide" id="cities_conteiner">
+			<label for="">City<span>*</span></label>
+			<select name="city_id" id="city"required>
+				<option disabled selected>Non-selected</option>
+			</select> 
+		</div>
+
+		<div class="group">
+			<label for="">Phone Number<span>*</span></label>
+			<input type="tel" name="phone_number" pattern="380[0-9]{9}" placeholder="380xxxxxxxxx" minlength="12" maxlength="12" required>
+		</div> 
+
+		<div class="group">
+			<label for="">Address</label>
+			<input type="text" name="address" placeholder="Enter your address">
+		</div> 
+
+		<div class="group">
+			<label for="">About me</label>
+			<textarea name="about_me" id="about" placeholder="Write about yourself" cols="20" rows="1" maxlength="500"></textarea>
+		</div>
+
+		<div class="group">
+			<center><button type="submit">Submit</button></center>
+		</div>
+	</form>
+		
+	<div class="list_conteiner">
+		<div id="list"><h1>List of registered users:</h1></div>
+		<section></section>
+	</div>	
+
+<script src="main.js"></script>
+</body>
+</html>
