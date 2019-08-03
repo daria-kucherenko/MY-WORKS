@@ -1,0 +1,56 @@
+.instructors-wrapper{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.instructor{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.instructor-photo{
+	margin-bottom: 15px;
+}
+
+.instructor-name{
+	color: #000;
+	font-family: 'Playfair Display', serif;
+	font-size: 26px;
+	font-weight: 400;
+	letter-spacing: 0.28px;
+	margin-bottom: 10px;
+}
+
+.instructor-students{
+color: #2ab738;
+font-size: 15px;
+font-weight: 500;
+letter-spacing: 0.14px;
+}
+
+@media(min-width: 900px){
+	.instructors-wrapper{
+		flex-direction: row;
+		margin-bottom: 50px;
+	}
+}
+
+@media(min-width: 1260px){
+	.instructors-wrapper{
+		flex-direction: row;	
+		margin-bottom: 255px;
+	}
+	.instructor-name{
+		font-size: 30px;
+	}
+	.instructor{
+		margin-bottom: 0;
+	}
+	.instructor-photo{
+		margin-bottom: 30px;
+	}
+}
+

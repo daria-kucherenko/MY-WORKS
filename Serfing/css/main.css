@@ -1,0 +1,10 @@
+
+/*font-family: 'Playfair Display', serif;*/
+@import "blocks/base.css";
+@import "blocks/nav.css";
+@import "blocks/header.css";
+@import "blocks/reviews.css";
+@import "blocks/video.css";
+@import "blocks/instructors.css";
+@import "blocks/blog.css";
+@import "blocks/footer.css";
